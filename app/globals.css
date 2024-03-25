@@ -24,3 +24,11 @@
   }
   
 }
+
+#MAIN{
+  scroll-snap-type: mandatory;
+}
+
+#MAIN > div{
+  scroll-snap-align: start;
+}
