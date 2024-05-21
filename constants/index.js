@@ -2959,7 +2959,7 @@ export const englishCardDetails = [
   {
     topic: "Random",
     questions: 500,
-    link: "english/bike/random",
+    link: "/english/bike/random",
     imageLink:'/assets/steer-wheel.svg'
   },
   {
@@ -2971,31 +2971,31 @@ export const englishCardDetails = [
   {
     topic: "Regulations Knowledge",
     questions: 90,
-    link: "english/bike/regulations"
+    link: "/english/bike/regulations"
     ,imageLink: '/assets/scale-icon.svg'
   },
   {
     topic: "Mechanical Knowledge",
     questions: 80,
-    link: "english/bike/mechanical",
+    link: "/english/bike/mechanical",
     imageLink : '/assets/engine-gears-icon.svg'
   },
   {
     topic: "Environmental Knowledge",
     questions: 30,
-    link: "english/bike/environment",
+    link: "/english/bike/environment",
     imageLink:'/assets/earth.svg'
   },
   {
     topic: "Accidents Knowledge",
     questions: 60,
-    link: "english/bike/accidents",
+    link: "/english/bike/accidents",
     imageLink:'/assets/bike-accident-icon.svg'
   },
   {
     topic: "Traffic Signals",
     questions: 110,
-    link: "english/bike/signals",
+    link: "/english/bike/signals",
     imageLink:'/assets/trafic.svg'
   },
   
