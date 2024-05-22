@@ -15,7 +15,7 @@ const page = () => {
             <div className="flex flex-col hover:shadow-md rounded-md bg-slate-50 p-3 min-h-[130px] items-center justify-center  min-w-[150px]">
               <p className="text-[16px] font-semibold">2 Wheeler</p>
               <Image
-                src="/assets/bike-motorcycle-icon.svg"
+                src="//bike-motorcycle-icon.svg"
                 height={80}
                 width={80}
                 alt="image"
@@ -27,7 +27,7 @@ const page = () => {
             <div className="flex flex-col hover:shadow-md rounded-md bg-slate-50 p-3 min-h-[130px] items-center justify-center min-w-[150px]">
               <p className="text-[16px] font-semibold ">4 Wheeler</p>
               <Image
-                src="/assets/car.svg"
+                src="//car.svg"
                 height={100}
                 width={100}
                 alt="image"

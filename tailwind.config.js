@@ -24,8 +24,14 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          500: '#624CF5',
+          50: ' #F6F8FD',
+          DEFAULT: '#624CF5',
+          foreground: 'hsl(var(--primary-foreground))'
+        },
+        backgroundImage: {
+          'dotted-pattern': "url('/images/dotted-pattern.png')",
+          'hero-img': "url('/images/hero.png')",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -51,7 +57,10 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-      },
+      }, backgroundImage: {
+        'dotted-pattern': "url('/assets/images/dotted-pattern.png')",
+        'hero-img': "url('/assets/images/hero.png')",
+      },  
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

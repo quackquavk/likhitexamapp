@@ -21,7 +21,7 @@ export default function Home() {
           </div>
           
              <Image
-            src="/assets/image-1.png"
+            src="/images/image-1.png"
             height={1000}
             width={1000}
             alt="hero"
@@ -36,7 +36,7 @@ export default function Home() {
             <Link href="/car">
               <div className="cursor-pointer h-40 w-40 md:w-60 rounded-md shadow-md flex flex-col items-center justify-around hover:shadow-lg hover:scale-110 transition-all">
                 <Image
-                  src="/assets/car.svg"
+                  src="/images/car.svg"
                   alt="car"
                   width={110}
                   height={110}
@@ -47,7 +47,7 @@ export default function Home() {
             </Link>
             <Link href="/bike">
               <div className="cursor-pointer h-40 w-40 md:w-60 rounded-md shadow-md flex flex-col items-center justify-around hover:shadow-lg hover:scale-110 transition-all">
-                <Image src="/assets/bike-motorcycle-icon.svg" alt="bike" width={90} height={90} />
+                <Image src="/images/bike-motorcycle-icon.svg" alt="bike" width={90} height={90} />
                 <p>Bike/Scooter license</p>
               </div>
             </Link>

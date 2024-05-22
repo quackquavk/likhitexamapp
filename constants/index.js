@@ -2960,43 +2960,43 @@ export const englishCardDetails = [
     topic: "Random",
     questions: 500,
     link: "/english/bike/random",
-    imageLink:'/assets/steer-wheel.svg'
+    imageLink:'/images/steer-wheel.svg'
   },
   {
     topic: "Driving Knowledge",
     questions: 130,
     link: "/english/bike/knowledge",
-    imageLink : '/assets/steer-wheel.svg'
+    imageLink : '/images/steer-wheel.svg'
   },
   {
     topic: "Regulations Knowledge",
     questions: 90,
     link: "/english/bike/regulations"
-    ,imageLink: '/assets/scale-icon.svg'
+    ,imageLink: '/images/scale-icon.svg'
   },
   {
     topic: "Mechanical Knowledge",
     questions: 80,
     link: "/english/bike/mechanical",
-    imageLink : '/assets/engine-gears-icon.svg'
+    imageLink : '/images/engine-gears-icon.svg'
   },
   {
     topic: "Environmental Knowledge",
     questions: 30,
     link: "/english/bike/environment",
-    imageLink:'/assets/earth.svg'
+    imageLink:'/images/earth.svg'
   },
   {
     topic: "Accidents Knowledge",
     questions: 60,
     link: "/english/bike/accidents",
-    imageLink:'/assets/bike-accident-icon.svg'
+    imageLink:'/images/bike-accident-icon.svg'
   },
   {
     topic: "Traffic Signals",
     questions: 110,
     link: "/english/bike/signals",
-    imageLink:'/assets/trafic.svg'
+    imageLink:'/images/trafic.svg'
   },
   
 ];
