@@ -2,13 +2,9 @@ import { englishCardDetails } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import DropDown from "./DropDown";
 
-const quizAppParams = {
-  questions: Object,
-  pageToSkip: Number,
-};
-
-const QuizApp = ({ questions, pageToSkip }) => {
+const QuizApp = ({ questions, pageToSkip = 0 }) => {
   const classNames =
     "bg-black rounded-md px-5 py-2 text-white hover:bg-slate-800 disabled:display-hidden";
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -20,7 +16,7 @@ const QuizApp = ({ questions, pageToSkip }) => {
 
   const handleAnswerSelection = (index) => {
     setSelectedAnswer(index);
-    console.log(index)
+    setAlert(false);
   };
 
   const handleNextQuestion = () => {
@@ -38,11 +34,10 @@ const QuizApp = ({ questions, pageToSkip }) => {
       setShowResult(false);
     }
   };
-  
 
   const handleSubmit = () => {
-    if (selectedAnswer) {
-      setAlert(false)
+    if (selectedAnswer !== null) {
+      setAlert(false);
       setShowResult(true);
     } else {
       setAlert(true);
@@ -51,9 +46,10 @@ const QuizApp = ({ questions, pageToSkip }) => {
 
   return (
     <>
-      <div className="w-full h-screen flex justify-center bg-slate-50">
+      <div className="w-full   justify-center bg-slate-50 h-full block">
         <div className="z-10 wrapper rounded-xl border-2 border-white p-20  mx-auto">
-          <div className="z-10  ">
+          <DropDown />
+          <div className="z-10  mt-4">
             <h2 className="md:text-xl text-lg font-bold mb-4">
               Question {currentQuestionIndex + 1}
             </h2>
@@ -119,37 +115,9 @@ const QuizApp = ({ questions, pageToSkip }) => {
                 : "Incorrect!"}
             </p>
           )}
-          {Alert && <p className="p-medium-20 bg-white">Please select an option</p>}
-        </div>
-      </div>
-      <div className="wrapper justify-center items-center">
-        <h1 className="font-bold text-[24px]">Check out other sections:</h1>
-        <div className="bg-slate-50 z-10">
-          <div className="items-start flex flex-row mt-3 overflow-x-scroll">
-            {englishCardDetails.map((details, index) => {
-              if (index !== pageToSkip) {
-                return (
-                  <Link href={details.link} key={details.questions}>
-                    <div className="flex flex-col bg-slate-50 rounded-md hover:shadow-md justify-center items-center min-h-[200px] min-w-[250px] max-w-[250px] gap-5 cursor-pointer">
-                      <h1 className="font-semibold text-[14px]">
-                        {details.topic}
-                      </h1>
-                      <Image
-                        src={details.imageLink}
-                        width={100}
-                        height={100}
-                        alt={details.topic}
-                        className="min-h-[80px] max-h-[80px]"
-                      />
-                      <p>{details.questions} Questions</p>
-                    </div>
-                  </Link>
-                );
-              } else {
-                return null; // Skip rendering the 2nd element
-              }
-            })}
-          </div>
+          {Alert && (
+            <p className="p-medium-20 bg-white">Please select an option</p>
+          )}
         </div>
       </div>
     </>

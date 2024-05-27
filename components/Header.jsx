@@ -4,9 +4,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="flex flex-row px-20 w-[100%] gap-10 justify-between p-5 items-center border-b-[1px] border-slate-200 ">
+    <div className="flex flex-row md:px-20 px-5 w-[100%] gap-10 justify-between p-5 items-center border-b-[1px] border-slate-200 ">
       <h1 className="text-[20px] font-bold font cursor-pointer"><Link href='/'>Vows</Link></h1>
-      <div className="flex items-center justify-center gap-10 md:flex sm:hidden">
+      <div className=" items-center justify-center gap-10 hidden md:flex">
         <h3><Link href='/'>Home</Link></h3>
         <h3><Link href='/'>About</Link></h3>
         <h3><Link href='/'>Apply</Link></h3>

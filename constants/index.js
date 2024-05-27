@@ -2958,45 +2958,53 @@ export const carVehicularKnowledge = [
 export const englishCardDetails = [
   {
     topic: "Random",
-    questions: 500,
+    noOfQuestions: 500,
     link: "/english/bike/random",
-    imageLink:'/images/steer-wheel.svg'
+    imageLink:'/images/steer-wheel.svg',
+    questions : 'Random'
+
   },
   {
     topic: "Driving Knowledge",
-    questions: 130,
+    noOfQuestions: 130,
     link: "/english/bike/knowledge",
-    imageLink : '/images/steer-wheel.svg'
+    imageLink : '/images/steer-wheel.svg',
+    questions : carKnowledgeQuestions
   },
   {
     topic: "Regulations Knowledge",
-    questions: 90,
+    noOfQuestions: 90,
     link: "/english/bike/regulations"
-    ,imageLink: '/images/scale-icon.svg'
+    ,imageLink: '/images/scale-icon.svg',
+    questions : 'bikeRegulationsKnowledge'
   },
   {
     topic: "Mechanical Knowledge",
-    questions: 80,
+    noOfQuestions: 80,
     link: "/english/bike/mechanical",
-    imageLink : '/images/engine-gears-icon.svg'
+    imageLink : '/images/engine-gears-icon.svg',
+    questions : 'bikeMechanicalKnwoledge'
   },
   {
     topic: "Environmental Knowledge",
-    questions: 30,
+    noOfQuestions: 30,
     link: "/english/bike/environment",
-    imageLink:'/images/earth.svg'
+    imageLink:'/images/earth.svg',
+    questions : 'environmentalKnowledge'
   },
   {
     topic: "Accidents Knowledge",
-    questions: 60,
+    noOfQuestions: 60,
     link: "/english/bike/accidents",
-    imageLink:'/images/bike-accident-icon.svg'
+    imageLink:'/images/bike-accident-icon.svg',
+    questions : 'accidentsKnowledge'
   },
   {
     topic: "Traffic Signals",
-    questions: 110,
+    noOfQuestions: 110,
     link: "/english/bike/signals",
-    imageLink:'/images/trafic.svg'
+    imageLink:'/images/trafic.svg',
+    questions : 'signalsKnowledge'
   },
   
 ];
