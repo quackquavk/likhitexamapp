@@ -16,7 +16,6 @@ const QuizApp = ({ questions, pageToSkip = 0 }) => {
 
   const handleAnswerSelection = (index) => {
     setSelectedAnswer(index);
-    setAlert(false);
   };
 
   const handleNextQuestion = () => {
