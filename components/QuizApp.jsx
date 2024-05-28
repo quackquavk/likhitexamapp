@@ -63,7 +63,7 @@ const QuizApp = ({ questions }) => {
   const src = jpgExists ? jpgSrc : pngSrc;
   return (
     <>
-      <div className="w-full   justify-center bg-slate-50 h-full block">
+      <div className="w-full bg-dotted-pattern justify-center bg-slate-50 h-full block">
         <div className="z-10 wrapper rounded-xl  p-20  mx-auto">
           <Select onValueChange={handleSelect}>
             <SelectTrigger className="w-fit  bg-black text-white px-10 rounded-md py-2 text-[15px] md:text-[20px] flex flex-grow items-center gap-3  focus:outline-none">
