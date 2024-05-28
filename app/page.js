@@ -32,14 +32,14 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id="select">
+      <section id="select" className="md:mt-2 mt-[10vh]">
         <div className="wrapper flex flex-col justify-center w-full items-center ">
           <h1 className="h4-small font-semibold text-[21px]">
             Select your category
           </h1>
           <div className="flex flex-col md:flex-row justify-center items-center w-full gap-3 border-t-1 border-t-black ">
             <Link href="/car">
-              <div className="cursor-pointer h-40 w-40 md:w-60 rounded-md shadow-md flex flex-col items-center justify-around hover:shadow-lg hover:scale-110 transition-all">
+              <div className="cursor-pointer h-40 w-80 md:w-60 rounded-md shadow-md flex flex-col items-center justify-around hover:shadow-lg hover:scale-110 transition-all">
                 <Image
                   src="/images/car.svg"
                   alt="car"
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
             </Link>
             <Link href="/bike">
-              <div className="cursor-pointer h-40 w-40 md:w-60 rounded-md shadow-md flex flex-col items-center justify-around hover:shadow-lg hover:scale-110 transition-all">
+              <div className="cursor-pointer h-40 w-80 md:w-60 rounded-md shadow-md flex flex-col items-center justify-around hover:shadow-lg hover:scale-110 transition-all">
                 <Image
                   src="/images/bike-motorcycle-icon.svg"
                   alt="bike"

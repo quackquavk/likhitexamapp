@@ -15,7 +15,7 @@ const QuizApp = ({ questions }) => {
   const [query, setQuery] = useState("Select question type");
   const classNames =
     "bg-black rounded-md px-5 py-2 text-white hover:bg-slate-800 disabled:display-hidden";
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(410);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [Alert, setAlert] = useState(false);
@@ -25,6 +25,7 @@ const QuizApp = ({ questions }) => {
   const handleAnswerSelection = (index) => {
     setSelectedAnswer(index);
   };
+  
 
   const handleNextQuestion = () => {
     if (currentQuestionIndex < questions.length - 1) {
@@ -81,6 +82,7 @@ const QuizApp = ({ questions }) => {
                     height={40}
                     alt={details.topic}
                     className="hidden md:block"
+                    priority
                   />
                   <h1 className="font-semibold smtext-[10px] md:text-[14px]">
                     {details.topic}
