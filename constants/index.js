@@ -1,5 +1,3 @@
-// quizData.js
-
 export const carKnowledgeQuestions = [
   {
     question: "What should you do at a stop sign?",
@@ -7,7 +5,7 @@ export const carKnowledgeQuestions = [
       "Stop and proceed if the way is clear",
       "Slow down and honk",
       "Ignore it and keep driving",
-      'Call the police.'
+      "Call the police.",
     ],
     correctAnswer: 0,
     id: 1,
@@ -2960,52 +2958,1834 @@ export const englishCardDetails = [
     topic: "Random",
     noOfQuestions: 500,
     link: "/english/bike/random",
-    imageLink:'/images/steer-wheel.svg',
-    questions : 'Random'
-
+    imageLink: "/images/steer-wheel.svg",
+    questions: "Random",
+    startingIndex: Math.floor(Math.random() * 501),
   },
   {
     topic: "Driving Knowledge",
     noOfQuestions: 130,
     link: "/english/bike/knowledge",
-    imageLink : '/images/steer-wheel.svg',
-    questions : carKnowledgeQuestions
-  },
-  {
-    topic: "Regulations Knowledge",
-    noOfQuestions: 90,
-    link: "/english/bike/regulations"
-    ,imageLink: '/images/scale-icon.svg',
-    questions : 'bikeRegulationsKnowledge'
+    imageLink: "/images/steer-wheel.svg",
+    startingIndex: 0,
   },
   {
     topic: "Mechanical Knowledge",
+    noOfQuestions: 90,
+    link: "/english/bike/regulations",
+    imageLink: "/images/scale-icon.svg",
+    questions: "bikeRegulationsKnowledge",
+    startingIndex: 130,
+  },
+  {
+    topic: "Regulations Knowledge",
     noOfQuestions: 80,
     link: "/english/bike/mechanical",
-    imageLink : '/images/engine-gears-icon.svg',
-    questions : 'bikeMechanicalKnwoledge'
+    imageLink: "/images/engine-gears-icon.svg",
+    questions: "bikeMechanicalKnwoledge",
+    startingIndex: 210,
   },
   {
     topic: "Environmental Knowledge",
     noOfQuestions: 30,
     link: "/english/bike/environment",
-    imageLink:'/images/earth.svg',
-    questions : 'environmentalKnowledge'
+    imageLink: "/images/earth.svg",
+    questions: "environmentalKnowledge",
+    startingIndex: 290,
   },
   {
     topic: "Accidents Knowledge",
     noOfQuestions: 60,
     link: "/english/bike/accidents",
-    imageLink:'/images/bike-accident-icon.svg',
-    questions : 'accidentsKnowledge'
+    imageLink: "/images/bike-accident-icon.svg",
+    questions: "accidentsKnowledge",
+    startingIndex: 320,
   },
   {
     topic: "Traffic Signals",
     noOfQuestions: 110,
     link: "/english/bike/signals",
-    imageLink:'/images/trafic.svg',
-    questions : 'signalsKnowledge'
+    imageLink: "/images/trafic.svg",
+    questions: "signalsKnowledge",
+    startingIndex: 390,
+  },
+];
+export const latestQuestions = [
+  {
+    question: "What is the color of pollution sticker?",
+    options: ["Green", "Blue", "Yellow", "Red"],
+    correctAnswer: 0,
+    id: 324,
+  },
+  {
+    question:
+      "What happens if one drives without testing vehicle’s pollution level?",
+    options: ["Imprisonment", "Fine", "Both a and b", "None of them"],
+    correctAnswer: 2,
+    id: 325,
+  },
+  {
+    question: "How often is government vehicle’s pollution test done?",
+    options: [
+      "Every 6 months",
+      "Every year",
+      "Every Two years",
+      "Every three months",
+    ],
+    correctAnswer: 1,
+    id: 326,
+  },
+  {
+    question: "What does the green sticker used in vehicle indicate?",
+    options: [
+      "Vehicle pollution is checked",
+      "Vehicle without pollution",
+      "Both a and b",
+      "None of them",
+    ],
+    correctAnswer: 2,
+    id: 327,
+  },
+  {
+    question: "Among the vehicles below, which one doesn't emit smoke?",
+    options: ["Bus", "Mini bus", "Truck", "Trolleybus"],
+    correctAnswer: 3,
+    id: 328,
+  },
+  {
+    question: "How can pollution be decreased?",
+    options: [
+      "Using A/C & heater less",
+      "By keeping the engine in good condition",
+      "By driving vehicle less",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 329,
+  },
+  {
+    question: "Where is vehicular pollution law/regulation implemented?",
+    options: [
+      "In Kathmandu Valley",
+      "In Birgunj market",
+      "In Biratnagar Metropolitan",
+      "All over Nepal",
+    ],
+    correctAnswer: 3,
+    id: 330,
+  },
+  {
+    question: "What does road safety mean?",
+    options: [
+      "The drivers should be careful",
+      "Follow the vehicular rules",
+      "To give priority to vehicles running along the road",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 331,
+  },
+  {
+    question: "Which light should be turned on while turning the vehicle?",
+    options: ["Fog light", "Head light", "Brake light", "Side light"],
+    correctAnswer: 3,
+    id: 332,
+  },
+  {
+    question: "What does the red traffic light mean?",
+    options: [
+      "Signal to be alert",
+      "Signal to stop the vehicle",
+      "Signal to be safe",
+      "None of them",
+    ],
+    correctAnswer: 1,
+    id: 333,
+  },
+  {
+    question: "When does one have to blow horn?",
+    options: [
+      "At the time of emergency/necessity",
+      "Never to blow the horn",
+      "Blow the horn at crowded places",
+      "All of the above",
+    ],
+    correctAnswer: 0,
+    id: 334,
+  },
+  {
+    question: "In what condition should one stop vehicle?",
+    options: [
+      "If the traffic light signals to stop at crossroad",
+      "At zebra Crossing where people are crossing the road",
+      "If traffic police signals to stop",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 335,
+  },
+  {
+    question: "In which part of the road is the zebra crossing on?",
+    options: [
+      "Main chowk",
+      "All chowks",
+      "Anywhere except chowk",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 336,
+  },
+  {
+    question: "In what kind of place does the driver have to slow the speed?",
+    options: [
+      "School area",
+      "Densely populated area",
+      "Crossroad",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 337,
+  },
+  {
+    question: "What happens if one drives in high speed?",
+    options: [
+      "It helps to develop the skills",
+      "One reaches the destination soon",
+      "It might invite accidents",
+      "Vehicle becomes old",
+    ],
+    correctAnswer: 2,
+    id: 338,
+  },
+  {
+    question: "What is Zebra Crossing made for?",
+    options: [
+      "To help vehicle cross the road",
+      "To help animal cross the road",
+      "To stop the vehicles",
+      "To help pedestrians cross the road",
+    ],
+    correctAnswer: 3,
+    id: 339,
+  },
+  {
+    question:
+      "What shouldn't be done while driving in front of school and hospital?",
+    options: [
+      "Blow horn",
+      "Drive the vehicle high speed",
+      "To overtake",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 340,
+  },
+  {
+    question:
+      "What is the speed limit one has to drive in densely populated area?",
+    options: [
+      "Less than 40 KM/Hour",
+      "More than 40 KM/Hour",
+      "Less than 35 KM/Hour",
+      "All of the above",
+    ],
+    correctAnswer: 0,
+    id: 341,
+  },
+  {
+    question: "Whom should the driver inform if accident happens?",
+    options: [
+      "Nearby police",
+      "Nearby resident",
+      "Relatives of those who are injured in accident",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 342,
+  },
+  {
+    question:
+      "What does a driver have to do when a pedestrian is crossing the road?",
+    options: [
+      "To gesture by hand",
+      "To increase the speed",
+      "To return the vehicle",
+      "To decrease the speed & let the pedestrian cross the road",
+    ],
+    correctAnswer: 3,
+    id: 343,
+  },
+  {
+    question: "Why does one have to use seat belt while driving?",
+    options: [
+      "To look good",
+      "To save himself/herself from the punishment of traffic police",
+      "To bear less injuries if accident happens",
+      "All of the above",
+    ],
+    correctAnswer: 2,
+    id: 344,
+  },
+  {
+    question: "What would you do if the tyre gets punctured on the way?",
+    options: [
+      "To keep on driving by ignoring it",
+      "To leave the vehicle at the side and go",
+      "To use spare tyre and get it repaired",
+      "None of the above",
+    ],
+    correctAnswer: 2,
+    id: 345,
+  },
+  {
+    question: "What should be done while turning the vehicle to left side?",
+    options: [
+      "To jam on brake and stop",
+      "To turn by turning on right side light",
+      "To turn by turning the left side light",
+      "Blow the horn harshly",
+    ],
+    correctAnswer: 2,
+    id: 346,
+  },
+  {
+    question:
+      "In the view of safety, what time is considered to be not suitable for driving?",
+    options: [
+      "While it is raining heavily",
+      "While it is snowing densely",
+      "All the time of thick fogging",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 347,
+  },
+  {
+    question:
+      "What is the name of the instrument that police use to find out the speed of the vehicle while driving?",
+    options: ["Radar gun", "Lidar gun", "Speed gun", "All of them"],
+    correctAnswer: 3,
+    id: 348,
+  },
+  {
+    question: "What does red traffic light mean?",
+    options: ["Be alert", "Stop the vehicle", "Go", "None of them"],
+    correctAnswer: 1,
+    id: 349,
+  },
+  {
+    question: "In what way should one overtake another vehicle?",
+    options: [
+      "Always from the right",
+      "By blowing the horn",
+      "If road is straight and safe",
+      "All of the above",
+    ],
+    correctAnswer: 0,
+    id: 350,
+  },
+  {
+    question:
+      "Which vehicle should be given first priority at the round turning?",
+    options: [
+      "Vehicle coming from the right side",
+      "Vehicle coming from the left side",
+      "Vehicle coming from the back side",
+      "None of the above",
+    ],
+    correctAnswer: 0,
+    id: 351,
+  },
+  {
+    question: "Which side should be used while overtaking?",
+    options: [
+      "From left side",
+      "From right side",
+      "From both sides",
+      "From none side",
+    ],
+    correctAnswer: 1,
+    id: 352,
+  },
+  {
+    question:
+      "To what kind of injured person from accident should artificial oxygen be given?",
+    options: [
+      "Normal injured",
+      "Bleeding injured",
+      "Unconscious injured",
+      "Conscious injured",
+    ],
+    correctAnswer: 2,
+    id: 353,
+  },
+  {
+    question: "Who shouldn't be informed when accident happens?",
+    options: [
+      "Nearby police",
+      "Close relatives",
+      "Relatives of injured",
+      "Pedestrian",
+    ],
+    correctAnswer: 3,
+    id: 354,
+  },
+  {
+    question: "How would one signal the vehicle ahead while overtaking?",
+    options: [
+      "By turning head light",
+      "By blowing horn",
+      "By Turning side light",
+      "All of the above",
+    ],
+    correctAnswer: 2,
+    id: 355,
+  },
+  {
+    question:
+      "Why is there more possibility to have accidents at night than day?",
+    options: [
+      "Because of more speed and less visibility",
+      "Because of more vehicle running",
+      "Because of passengers drunkenness",
+      "None of the above",
+    ],
+    correctAnswer: 0,
+    id: 356,
+  },
+
+  {
+    question: "In what kind of place does one not have to lower the speed?",
+    options: [
+      "Densely populated areas",
+      "School areas",
+      "Crossroads",
+      "Open road",
+    ],
+    correctAnswer: 3,
+    id: 357,
+  },
+  {
+    question: "What shouldn't be done while driving?",
+    options: [
+      "To talk on mobile",
+      "To drink alcohol",
+      "To quarrel/Fight with the passenger",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 358,
+  },
+  {
+    question:
+      "What lights should be turned on while parking the vehicle at night?",
+    options: ["Head light", "Side light", "Parking light", "None of them"],
+    correctAnswer: 2,
+    id: 359,
+  },
+  {
+    question:
+      "What should be done if the vehicle from behind tries to overtake?",
+    options: [
+      "To increase the speed",
+      "To slow the speed & let it go",
+      "Blow the horn",
+      "Nothing to be done",
+    ],
+    correctAnswer: 1,
+    id: 360,
+  },
+  {
+    question: "Which gear should be used while driving uphill?",
+    options: ["First gear", "Second gear", "Third gear", "Fourth gear"],
+    correctAnswer: 0,
+    id: 361,
+  },
+  {
+    question: "At what time does one have to look at looking glass?",
+    options: [
+      "While overtaking",
+      "While reversing",
+      "While turning left",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 362,
+  },
+  {
+    question:
+      "What should not be done if the vehicle from behind tries to overtake?",
+    options: [
+      "To slow speed & give side",
+      "To increase the speed",
+      "To blow horn",
+      "Both B and C",
+    ],
+    correctAnswer: 3,
+    id: 363,
+  },
+  {
+    question: "What condition of the driver is necessary while driving?",
+    options: [
+      "To put on clean cloth",
+      "Not have drunk alcohol",
+      "To put on shoes",
+      "Not to have slept at night",
+    ],
+    correctAnswer: 1,
+    id: 364,
+  },
+  {
+    question:
+      "Whom should the driver inform if mechanical condition of the vehicle is not good?",
+    options: [
+      "Traffic Police",
+      "Nearby Police station",
+      "Vehicle owner or manager",
+      "District Administration Office",
+    ],
+    correctAnswer: 2,
+    id: 365,
+  },
+  {
+    question: "In what kind of place does one have to stop the vehicle?",
+    options: [
+      "Bus stop",
+      "Crowded place",
+      "Parking spot",
+      "Middle of the road",
+    ],
+    correctAnswer: 2,
+    id: 366,
+  },
+  {
+    question: "What should a driver do when entering main road from side road?",
+    options: [
+      "To enter at high speed",
+      "To stop the vehicle in the middle of the main road",
+      "To enter at safe speed with signal",
+      "To enter without signal",
+    ],
+    correctAnswer: 2,
+    id: 367,
+  },
+  {
+    question: "What should be done while reversing the vehicle?",
+    options: [
+      "To race the engine",
+      "To look through rear view mirror to see whether there is pedestrian or vehicle",
+      "To look back after stopping and getting down from the vehicle",
+      "To blow horn",
+    ],
+    correctAnswer: 1,
+    id: 368,
+  },
+  {
+    question: "What would you do before you start your vehicle?",
+    options: [
+      "To check oil",
+      "To check gear",
+      "To check brake and indicator light",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 369,
+  },
+  {
+    question: "In what condition is it appropriate to use hand brake?",
+    options: [
+      "While starting vehicle",
+      "While parking vehicle",
+      "While stopping vehicle",
+      "While stopping it immediately",
+    ],
+    correctAnswer: 1,
+    id: 370,
+  },
+  {
+    question: "What is the cause of vehicular accident?",
+    options: [
+      "Human error",
+      "Mechanical error",
+      "Miserable condition of road",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 371,
+  },
+  {
+    question:
+      "Which vehicle has more possibility to have accident while changing lane immediately at one sided road?",
+    options: [
+      "Vehicle coming from front side",
+      "Vehicle coming from right side",
+      "Vehicle coming from left side",
+      "Vehicle coming from back side",
+    ],
+    correctAnswer: 3,
+    id: 372,
+  },
+  {
+    question: "What should be done while reversing the vehicle?",
+    options: [
+      "To use back gear",
+      "To look side mirror",
+      "To press on accelerator",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 373,
+  },
+  {
+    question: "What should be condition of the driver?",
+    options: [
+      "To have good eyesight",
+      "Not tired",
+      "Not drunk",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 374,
+  },
+  {
+    question: "How should one drive if he/she is in a hurry?",
+    options: [
+      "Keep on blowing the horn time & again",
+      "Keep on driving by turning on brake light and moving hands",
+      "Drive at safe speed by turning on emergency lights",
+      "Look for measure to reach as soon as possible",
+    ],
+    correctAnswer: 2,
+    id: 375,
+  },
+  {
+    question: "How would one drive vehicle at turning?",
+    options: [
+      "By driving in low gear",
+      "By lowering speed",
+      "By blowing the horn 2-3 times before turning",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 376,
+  },
+  {
+    question:
+      "Who is responsible to effectuate the compensation to victim on vehicular accident?",
+    options: [
+      "Vehicle owner",
+      "Chief District Officer",
+      "Traffic Police",
+      "Traffic Management Office",
+    ],
+    correctAnswer: 0,
+    id: 377,
+  },
+  {
+    question: "What happens if one drives vehicle being drunk?",
+    options: [
+      "Accident might happen",
+      "Fines",
+      "Both a and b",
+      "It becomes good/funny",
+    ],
+    correctAnswer: 2,
+    id: 378,
+  },
+  {
+    question: "Why should one use seatbelt?",
+    options: [
+      "For rest",
+      "To save oneself from fine",
+      "For safe journey",
+      "None of the above",
+    ],
+    correctAnswer: 2,
+    id: 379,
+  },
+  {
+    question: "What should first be done to the injured person in an accident?",
+    options: [
+      "To take him/her to hospital",
+      "To do primary treatment",
+      "To remove him/her from crowd",
+      "Nothing to be done",
+    ],
+    correctAnswer: 0,
+    id: 380,
+  },
+  {
+    question:
+      "Does one have to immediately give food to injured person in accident or not?",
+    options: [
+      "Yes",
+      "No",
+      "As per the injured wish",
+      "To give food as per onlooker’s advice",
+    ],
+    correctAnswer: 1,
+    id: 381,
+  },
+  {
+    question: "What might happen while driving during rain?",
+    options: [
+      "Vehicle tyres might get slipped",
+      "Brakes might not work when they are required",
+      "Muddy water might be splashed to pedestrian",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 382,
+  },
+  {
+    question: "What should not be done at zebra crossing?",
+    options: [
+      "To drive speedily",
+      "To let the traffic police stand there",
+      "To stop the vehicle",
+      "All of the above",
+    ],
+    correctAnswer: 0,
+    id: 383,
+  },
+  {
+    question: "What should be done while turning the vehicle to right?",
+    options: [
+      "By turning on left side light",
+      "By turning on headlight",
+      "By turning on right side light",
+      "None of the above",
+    ],
+    correctAnswer: 2,
+    id: 384,
+  },
+  {
+    question: "What should be done to stop the vehicle at upward road?",
+    options: [
+      "To use wedge",
+      "To keep the vehicle at first gear",
+      "To use hand brake",
+      "All of the above",
+    ],
+    correctAnswer: 2,
+    id: 385,
+  },
+  {
+    question:
+      "Which light should be turned on to see vehicle at the time of thick fog or mist?",
+    options: ["Headlights", "Brake lights", "Fog lights", "Side lights"],
+    correctAnswer: 2,
+    id: 386,
+  },
+  {
+    question:
+      "What should be done to your vehicle when you are close to T-Junction?",
+    options: [
+      "To let left & right side vehicle pass",
+      "To stop",
+      "Go ahead only by lowering the speed when the road is safe",
+      "All of the above",
+    ],
+    correctAnswer: 2,
+    id: 387,
+  },
+  {
+    question: "Why is mobil used in vehicles?",
+    options: [
+      "To save fuel",
+      "To help engine work well/easy",
+      "To drive vehicle at high speed",
+      "All of the above",
+    ],
+    correctAnswer: 1,
+    id: 388,
+  },
+  {
+    question: "What does the black smoke coming from vehicle indicate?",
+    options: [
+      "Silencer pipe is broken",
+      "Silencer pipe missing",
+      "Engine is not in good condition",
+      "No fuel",
+    ],
+    correctAnswer: 2,
+    id: 389,
+  },
+  {
+    question:
+      "In what condition is driving vehicle by pressing the clutch dangerous?",
+    options: [
+      "While driving downward",
+      "While driving at high speed",
+      "While driving at turning",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 390,
+  },
+  {
+    question:
+      "What should be done when green light glows when you reach zebra crossing?",
+    options: [
+      "To keep on going ahead",
+      "To stop the vehicle",
+      "To be prepared to drive the vehicle ahead",
+      "All of the above",
+    ],
+    correctAnswer: 0,
+    id: 391,
+  },
+  {
+    question:
+      "What should be done when yellow light glows when you reach zebra crossing?",
+    options: [
+      "To keep on going ahead",
+      "To stop the vehicle",
+      "To be prepared to drive the vehicle ahead",
+      "All of the above",
+    ],
+    correctAnswer: 2,
+    id: 392,
+  },
+  {
+    question: "What does zero motion line indicate?",
+    options: [
+      "To stop the vehicle",
+      "To lower/decrease the speed",
+      "To turn back the vehicle",
+      "To drive the vehicle at high speed",
+    ],
+    correctAnswer: 0,
+    id: 393,
+  },
+  {
+    question:
+      "What should be done when red light glows when you reach zebra crossing?",
+    options: [
+      "To keep on going ahead",
+      "To stop the vehicle",
+      "To be prepared to drive the vehicle ahead",
+      "All of the above",
+    ],
+    correctAnswer: 1,
+    id: 394,
+  },
+  {
+    question:
+      "What should be understood when the vehicle’s rear red light turns on?",
+    options: [
+      "To have changed the gear",
+      "To have given the side",
+      "To be using the brakes",
+      "To be increasing the speed",
+    ],
+    correctAnswer: 2,
+    id: 395,
+  },
+  {
+    question: "What does a triangular shaped traffic light sign indicate?",
+    options: ["Information", "Awareness", "Prohibition", "All of the above"],
+    correctAnswer: 2,
+    id: 396,
+  },
+  {
+    question:
+      "What does a rectangular/square shaped traffic light sign not indicate?",
+    options: ["Information", "Awareness", "Prohibition", "Both B and C"],
+    correctAnswer: 3,
+    id: 397,
+  },
+  {
+    question: "What does circular shaped traffic light sign indicate?",
+    options: ["Information", "Awareness", "Prohibition", "All of them"],
+    correctAnswer: 2,
+    id: 398,
+  },
+  {
+    question: "Why is line drawn on the road?",
+    options: [
+      "To make the movement of vehicle easy",
+      "To make road good",
+      "To charge",
+      "All of the above",
+    ],
+    correctAnswer: 0,
+    id: 399,
+  },
+  {
+    question:
+      "Among the colours below, which one isn’t used in line drawn on the road?",
+    options: ["White", "Yellow", "Red", "Black"],
+    correctAnswer: 3,
+    id: 400,
+  },
+  {
+    question: "Which colour isn’t used in zebra crossing line?",
+    options: ["Yellow", "Black", "White", "None of the above"],
+    correctAnswer: 3,
+    id: 401,
+  },
+  {
+    question:
+      "What does the continuous white line painted in the middle of the road indicate?",
+    options: [
+      "The line cannot be crossed",
+      "The line can be crossed",
+      "Both a & b",
+      "None of the above",
+    ],
+    correctAnswer: 0,
+    id: 402,
+  },
+  {
+    question: "How many types of colour are there in traffic light?",
+    options: ["2 types", "3 types", "4 types", "5 types"],
+    correctAnswer: 1,
+    id: 403,
+  },
+  {
+    question: "To whom is the signal given by the traffic police?",
+    options: [
+      "Vehicle drivers",
+      "Pedestrians",
+      "Pedestrians and vehicle drivers",
+      "None of them",
+    ],
+    correctAnswer: 2,
+    id: 404,
+  },
+  {
+    question:
+      "Among the colours given below, which isn’t a traffic light colour?",
+    options: ["Yellow", "Red", "Green", "Black"],
+    correctAnswer: 3,
+    id: 405,
+  },
+  {
+    question: "What does automatic traffic signal mean?",
+    options: [
+      "The signal kept at the side of road",
+      "Electric light kept at the road",
+      "Signal given by the traffic police",
+      "None of them",
+    ],
+    correctAnswer: 1,
+    id: 406,
+  },
+  {
+    question: "Whose duty is it to follow the traffic signs?",
+    options: [
+      "Vehicle driver",
+      "Pedestrian",
+      "Large vehicle",
+      "All of the above",
+    ],
+    correctAnswer: 3,
+    id: 407,
+  },
+  {
+    question: "What does traffic signal mean?",
+    options: [
+      "The signal given by vehicle driver",
+      "The signal given by police",
+      "The signal to maintain the rules of road",
+      "All of the above",
+    ],
+    correctAnswer: 2,
+    id: 408,
+  },
+  {
+    question: "How many types of international traffic sign are there?",
+    options: ["Two types", "Three types", "Four types", "No Clearity"],
+    correctAnswer: 1,
+    id: 409,
+  },
+  {
+    question: "In which part of road is the divider line drawn?",
+    options: [
+      "On right side",
+      "On left side",
+      "On the middle of road",
+      "Wherever it is painted",
+    ],
+    correctAnswer: 2,
+    id: 410,
+  },
+  {
+    question: "What colour board is there on highway to signal direction?",
+    options: ["Green", "Red", "Yellow", "Black"],
+    correctAnswer: 0,
+    id: 411,
+  },
+  {
+    question: "What is the another name for lane line and zebra crossing?",
+    options: ["Road marking", "Traffic marking", "Hotspot", "All the above"],
+    correctAnswer: 0,
+    id: 412,
+  },
+  {
+    question: "What is the shape of restrictive/prohibitive traffic sign?",
+    options: ["Circular", "Triangular", "Square", "Rectangular"],
+    correctAnswer: 0,
+    id: 413,
+  },
+  {
+    question: "Why are traffic lights kept at crossroad?",
+    options: [
+      "So that driver could see it at night",
+      "To control traffic",
+      "To turn the vehicle",
+      "To help vehicle park",
+    ],
+    correctAnswer: 1,
+    id: 414,
+  },
+  {
+    question:
+      "Among the given options, which doesn’t control traffic on the road?",
+    options: [
+      "Traffic police",
+      "Department of Transport Management",
+      "Road line",
+      "Traffic signal",
+    ],
+    correctAnswer: 1,
+    id: 415,
   },
   
+  {
+    id: 416,
+    question: "What does this traffic sign indicate?",
+    options: ["Square", "Rectangular", "Parking spot", "Hospital"],
+    correctAnswer: 0,
+  },
+  {
+    id: 417,
+    question: "What does this traffic sign indicate?",
+    options: ["One way", "Two way", "East side", "West side"],
+    correctAnswer: 3,
+  },
+  {
+    id: 418,
+    question: "What does this traffic sign indicate?",
+    options: ["Shop", "Workshop", "Residence", "Parking spot"],
+    correctAnswer: 0,
+  },
+  {
+    id: 419,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Religious place",
+      "Residential area",
+      "Hospital",
+      "Primary treatment",
+    ],
+    correctAnswer: 3,
+  },
+  {
+    id: 420,
+    question: "What does this traffic sign indicate?",
+    options: ["Uphill road", "One way", "Overtaking place", "Right turn"],
+    correctAnswer: 2,
+  },
+  {
+    id: 421,
+    question: "What does this traffic sign indicate?",
+    options: ["Telephone", "Internet", "Tool", "Police"],
+    correctAnswer: 1,
+  },
+  {
+    id: 422,
+    question: "What does this traffic sign indicate?",
+    options: ["Telephone service", "Trunk service", "T-Junction", "Dead end"],
+    correctAnswer: 2,
+  },
+  {
+    id: 423,
+    question: "What does this traffic sign indicate?",
+    options: ["Pedestrian way", "School", "Police", "Broken way"],
+    correctAnswer: 0,
+  },
+  {
+    id: 424,
+    question: "What does this traffic sign indicate?",
+    options: ["Vehicle parking spot", "Hospital", "Machine", "Petrol pump"],
+    correctAnswer: 1,
+  },
+  {
+    id: 425,
+    question: "What does this traffic sign indicate?",
+    options: ["Rest place", "Refreshment center", "Shelter place", "Hospital"],
+    correctAnswer: 1,
+  },
+  {
+    id: 426,
+    question: "What does this traffic sign indicate?",
+    options: ["Rest place", "Hospital", "Residental area", "Shelter place"],
+    correctAnswer: 2,
+  },
+  {
+    id: 427,
+    question: "What does this traffic sign indicate?",
+    options: ["House", "Temple", "Restaurant", "School"],
+    correctAnswer: 0,
+  },
+  {
+    id: 428,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Way for pedestrian & Cyclist",
+      "School",
+      "Children",
+      "Crowded place",
+    ],
+    correctAnswer: 2,
+  },
+  {
+    id: 429,
+    question: "What does this traffic sign indicate?",
+    options: ["Bicycle Repairing", "Way of bicycle", "No Bicycle", "Cyclist"],
+    correctAnswer: 0,
+  },
+  {
+    id: 430,
+    question: "What does this traffic sign indicate?",
+    options: ["No parking", "Bus stop", "Bus Station", "Parking spot"],
+    correctAnswer: 2,
+  },
+  {
+    id: 431,
+    question: "What does this traffic sign indicate?",
+    options: ["Forest area", "Temple", "Picnic Spot", "School"],
+    correctAnswer: 3,
+  },
+  {
+    id: 432,
+    question: "What does this traffic sign indicate?",
+    options: ["Zebra cross", "Resting Place", "Parking spot", "School"],
+    correctAnswer: 1,
+  },
+  {
+    id: 433,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Skidding place",
+      "Overtaking place",
+      "To stop/park if urgent",
+      "Forest area",
+    ],
+    correctAnswer: 0,
+  },
+  {
+    id: 434,
+    question: "What does this traffic sign indicate?",
+    options: ["Lines beside the road", "Gravel Road", "Road", "Parking"],
+    correctAnswer: "",
+  },
+  {
+    id: 435,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Pitch road",
+      "Overtaking place",
+      "Lines in the middle of road",
+      "Stoppage",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 436,
+    question: "What does this traffic sign indicate?",
+    options: ["No entry", "No parking", "No overtaking", "No stoppage"],
+    correctAnswer: "",
+  },
+  {
+    id: 437,
+    question: "What does this traffic sign indicate?",
+    options: ["No entry", "No parking", "Parking spot", "No public"],
+    correctAnswer: "",
+  },
+  {
+    id: 438,
+    question: "What does this traffic sign indicate?",
+    options: ["No entry", "No right turn", "Parking spot", "Stoppage"],
+    correctAnswer: "",
+  },
+  {
+    id: 439,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "No parking",
+      "Overtaking place",
+      "Parking spot",
+      "No right turn",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 440,
+    question: "What does this traffic sign indicate?",
+    options: ["No parking", "No left turn", "Parking spot", "Turn right"],
+    correctAnswer: "",
+  },
+  {
+    id: 441,
+    question: "What does this traffic sign indicate?",
+    options: ["No right turn", "No left turn", "No U turn", "Overtaking place"],
+    correctAnswer: "",
+  },
+  {
+    id: 442,
+    question: "What does this traffic sign indicate?",
+    options: ["No parking", "Maximum speed limit", "Parking spot", "Go ahead"],
+    correctAnswer: "",
+  },
+  {
+    id: 443,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Parking",
+      "Overtaking Place",
+      "Vehicle width limit",
+      "School area",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 444,
+    question: "What does this traffic sign indicate?",
+    options: ["No overtake", "Overtaking place", "One way", "Two way"],
+    correctAnswer: "",
+  },
+  {
+    id: 445,
+    question: "What does this traffic sign indicate?",
+    options: ["No turning", "Turning round", "Speed limit end", "No horn"],
+    correctAnswer: "",
+  },
+  {
+    id: 446,
+    question: "What does this traffic sign indicate?",
+    options: ["Stop", "Stop, look & go", "Parking spot", "Go straight"],
+    correctAnswer: "",
+  },
+  {
+    id: 447,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "No parking",
+      "Overtaking place",
+      "Parking spot",
+      "Speed limit end",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 448,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Prohibition to go straight",
+      "Go straight only",
+      "Parking spot",
+      "Turn left by going ahead",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 449,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Go straight only",
+      "Go from any way",
+      "Turn left by going ahead",
+      "Speed limit end",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 450,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Go from any way",
+      "Go right, left, or straight",
+      "Turn Left",
+      "Turn right",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 451,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Turn right",
+      "Let the vehicle coming from right of small circular road",
+      "Go by turning round",
+      "Right turning",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 452,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Vehicle weight limit",
+      "Axle weight limit",
+      "Vehicle length limit",
+      "Vehicle width limit",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 453,
+    question: "What does this traffic sign indicate?",
+    options: ["Turn right", "Go ahead", "Turn Left", "Turn right"],
+    correctAnswer: "",
+  },
+  {
+    id: 454,
+    question: "What does this traffic sign indicate?",
+    options: ["Left turning", "Take to left side", "Turn left", "Turn right"],
+    correctAnswer: "",
+  },
+  {
+    id: 455,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "One way traffic",
+      "Two way traffic",
+      "Go straight ahead",
+      "Go ahead",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 456,
+    question: "What does this traffic sign indicate?",
+    options: ["Stop, look & go", "Stop", "Stop & go", "Go"],
+    correctAnswer: "",
+  },
+  {
+    id: 457,
+    question: "What does this traffic sign indicate?",
+    options: ["No truck", "No vehicle", "No parking", "Vehicle scrap spot"],
+    correctAnswer: "",
+  },
+  {
+    id: 458,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Vehicle height limit",
+      "Vehicle length limit",
+      "Vehicle width limit",
+      "Go only for 10 Meters",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 459,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Vehicle width limit",
+      "Vehicle height should exactly be 4.4 m",
+      "Axle weight limit",
+      "Vehicle height limit",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 460,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Vehicle width limit",
+      "Axle weight limit",
+      "Vehicle height limit",
+      "Vehicle length limit",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 461,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "No oxen cart",
+      "No vehicle",
+      "Vehicle weight limit",
+      "Only Cart",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 462,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Circle",
+      "Go through round turning",
+      "Going place",
+      "Go (Temporary sign)",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 463,
+    question: "What does this traffic sign indicate?",
+    options: ["Y Junction", "T Junction", "Dead end", "Turn to T"],
+    correctAnswer: "",
+  },
+  {
+    id: 464,
+    question: "What does this traffic sign indicate?",
+    options: ["Rock falling", "Men at work", "Dangerous", "Safe place"],
+    correctAnswer: "",
+  },
+  {
+    id: 465,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Two way road straight ahead",
+      "Two way",
+      "Vehicle may come from front side",
+      "One way",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 466,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Two way road straight ahead",
+      "Vehicle may come from ahead",
+      "Two way road ahead",
+      "One way",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 467,
+    question: "What does this traffic sign indicate?",
+    options: ["Turn Left", "Turn right", "Turning", "Round turning"],
+    correctAnswer: "",
+  },
+  {
+    id: 468,
+    question: "What does this traffic sign indicate?",
+    options: ["Turn right", "Turn full right", "Turn Left", "Turning"],
+    correctAnswer: "",
+  },
+  {
+    id: 469,
+    question: "What does this traffic sign indicate?",
+    options: ["Narrow bridge", "Narrow road", "One way road", "Two way road"],
+    correctAnswer: "",
+  },
+  {
+    id: 470,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Slippery road",
+      "Upward way of hill",
+      "Steep uphill",
+      "Bumped road",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 471,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Dangerous dip road",
+      "Dangerous bulged road",
+      "Downward road",
+      "Go straight ahead",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 472,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Narrow bridge",
+      "Narrow road from both side",
+      "Narrow Road",
+      "One way",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 473,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Rock falling place",
+      "Steep upward way",
+      "Riverside",
+      "Dangerous slope",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 474,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Narrow road from the left side",
+      "Overtaking place",
+      "Narrow road from the right side",
+      "Going place/go",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 475,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "S Junction",
+      "Over taking place",
+      "Turning",
+      "Dual turning first left",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 476,
+    question: "What does this traffic sign indicate?",
+    options: ["Y Junction", "T Junction", "Section road", "Going place"],
+    correctAnswer: "",
+  },
+  {
+    id: 477,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Left turn",
+      "Vehicle may come from left side",
+      "Left Turning",
+      "Right traffic",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 478,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Vehicle may come from right side",
+      "Overtaking place",
+      "Parking spot",
+      "Going place",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 479,
+    question: "What does this traffic sign indicate?",
+    options: ["Gravel Road", "Police Station", "Cross road", "Round turning"],
+    correctAnswer: "",
+  },
+  {
+    id: 480,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Vehicle width limit",
+      "Front height limit",
+      "Vehicle axle weight limit",
+      "Vehicle length limit",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 481,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Hospital",
+      "Road on all sides",
+      "Section road before crossroad",
+      "Main road before crossroad",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 482,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Main road before crossroad",
+      "Section road before crossroad",
+      "Road from four sides",
+      "Go both left & right",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 483,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Steep downward",
+      "Steep uphill",
+      "Accidental Prone Area",
+      "Only truck",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 484,
+    question: "What does this traffic sign indicate?",
+    options: ["National park", "Reserved area", "Domestic animal", "No animal"],
+    correctAnswer: "",
+  },
+  {
+    id: 485,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Airport",
+      "Aircraft at low height",
+      "Aeroplane may come from front",
+      "High speed",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 486,
+    question: "What does this traffic sign indicate?",
+    options: ["Uphill", "Downhill", "Bulged way", "Ditches"],
+    correctAnswer: "",
+  },
+  {
+    id: 487,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Section road on left",
+      "Go to left side",
+      "Section road on right",
+      "Go straight ahead",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 488,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "One after another dual ways",
+      "Turn left",
+      "Turn right",
+      "Go straight ahead",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 489,
+    question: "What does this traffic sign indicate?",
+    options: ["End of speed limit", "Dual road end", "One way", "Two way road"],
+    correctAnswer: "",
+  },
+  {
+    id: 490,
+    question: "What does this traffic sign indicate?",
+    options: ["Road pole", "Decorative light", "Traffic light", "Cat`s eye"],
+    correctAnswer: "",
+  },
+  {
+    id: 491,
+    question: "What does this traffic sign indicate?",
+    options: ["Wild animal", "Dense forest", "National Park", "Tiger"],
+    correctAnswer: "",
+  },
+  {
+    id: 492,
+    question: "What does this traffic sign indicate?",
+    options: ["Children", "Pedestrian ahead", "Zebra crossing", "School area"],
+    correctAnswer: "",
+  },
+  {
+    id: 493,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "River side",
+      "Steep downhill",
+      "Steep uphill",
+      "Vehicle weight measurement",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 494,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "River side",
+      "Railway",
+      "No gate before rail/train",
+      "Dangerous road",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 495,
+    question: "What does this traffic sign indicate?",
+    options: ["Men at work", "Road cleaning", "Uphill road", "Downhill road"],
+    correctAnswer: "",
+  },
+  {
+    id: 496,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "No entry",
+      "Temporary Route Permit Centre",
+      "Check post",
+      "Weighing bridge",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 497,
+    question: "What does this traffic sign indicate?",
+    options: ["Pedestrian ahead", "Children", "Zebra crossing", "School area"],
+    correctAnswer: "",
+  },
+  {
+    id: 498,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Sharp steep turning to the left",
+      "Turn left",
+      "Turn right",
+      "Downhill road",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 499,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "Domestic animal",
+      "Forest",
+      "Forest, wildlife reservation",
+      "Zoo",
+    ],
+    correctAnswer: "",
+  },
+  {
+    id: 500,
+    question: "What does this traffic sign indicate?",
+    options: [
+      "T junction (right & left turning)",
+      "Y junction",
+      "Steep turning",
+      "Steep turning to left side",
+    ],
+    correctAnswer: null,
+  },
 ];
 
+function merger(obj1, obj2, obj3) {
+  const mergedObject = [];
+  for (let i = 0; i < obj1.length; i++) {
+    mergedObject.push(obj1[i]);
+  }
+  for (let i = 0; i < obj2.length; i++) {
+    mergedObject.push(obj2[i]);
+  }
+  for (let i = 0; i < obj3.length; i++) {
+    mergedObject.push(obj3[i]);
+  }
+  return mergedObject;
+}
+
+const allQuestions = merger(
+  carKnowledgeQuestions,
+  carVehicularKnowledge,
+  latestQuestions
+);
+const indexes = [
+  2,
+  0,
+  1,
+  3,
+  2,
+  0,
+  3,
+  0,
+  3,
+  2,
+  1,
+  2,
+  0,
+  1,
+  1,
+  2,
+  0,
+  2,
+  0,
+  2,
+  3,
+  1,
+  0,
+  3,
+  1,
+  2,
+  1,
+  2,
+  0,
+  3,
+  1,
+  3,
+  1,
+  2,
+  0,
+  1,
+  0,
+  2,
+  1,
+  0,
+  2,
+  0,
+  1,
+  3,
+  1,
+  0,
+  3,
+  1,
+  2,
+  0,
+  2,
+  1,
+  1,
+  0,
+  2,
+  0,
+  1,
+  0,
+  2,
+  3,
+  ,
+  0,
+  1,
+  0,
+  3,
+  1,
+  3,
+  1,
+  0,
+  2,
+  1,
+  2,
+  2,
+  0,
+  1,
+  2,
+  0,
+  1,
+  0,
+  2,
+  0,
+  2,
+  1,
+  0,
+  2,
+  0,
+];
+
+function ediph(question) {
+  for (let i = 0; i < indexes.length; i++) {
+    const questionIndex = i + 411; // Adjust the index to start from position 411
+    if (question[questionIndex]) {
+      const correctAnswerIndex = indexes[i];
+      question[questionIndex].correctAnswer = correctAnswerIndex;
+    }
+  }
+  return question;
+}
+export const allQuestions1 = ediph(allQuestions);
