@@ -11,7 +11,7 @@ const Header = () => {
         <h3><Link href='/'>About</Link></h3>
         <h3><Link href='/'>Apply</Link></h3>
       </div>
-      <button className="bg-black text-white rounded-md px-4 py-1 text-[18px]">Login</button>
+      <button className="bg-black text-white rounded-md px-4 py-1 text-[14px] ">Login</button>
     </div>
   );
 };
