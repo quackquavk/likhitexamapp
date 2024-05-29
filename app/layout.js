@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
+import { icons } from "lucide-react";
 
 const poppins = Poppins({
   subsets: ["latin"],

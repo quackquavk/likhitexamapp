@@ -8,7 +8,9 @@ const page = () => {
       className="flex flex-col iitems-start  mouse-wheel gap-2 w-full sm:overflow-hidden py-5 min-h-screen"
       id="MAIN"
     >
-      <QuizApp   questions={allQuestions1} />
+      <QuizApp questions={allQuestions1} />
+      <h3>Question Format</h3>
+      <p></p>
     </section>
   );
 };
