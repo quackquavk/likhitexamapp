@@ -9,8 +9,6 @@ const page = () => {
       id="MAIN"
     >
       <QuizApp questions={allQuestions1} />
-      <h3>Question Format</h3>
-      <p></p>
     </section>
   );
 };
