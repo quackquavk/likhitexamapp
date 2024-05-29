@@ -32,8 +32,8 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id="select" className="md:mt-2 mt-[10vh]">
-        <div className="wrapper flex flex-col justify-center w-full items-center ">
+      <section id="select" className="md:mt-2 mt-[200px]">
+        <div className="flex flex-col justify-center w-full items-center ">
           <h1 className="h4-small font-semibold text-[21px]">
             Select your category
           </h1>
